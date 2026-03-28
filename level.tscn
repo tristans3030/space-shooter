@@ -41,6 +41,7 @@ rotation = 1.5707964
 shape = SubResource("RectangleShape2D_vonw3")
 
 [node name="MeteorTimer" type="Timer" parent="." unique_id=317626873]
+wait_time = 0.5
 autostart = true
 
 [node name="Meteors" type="Node2D" parent="." unique_id=221692124]
