@@ -1,10 +1,8 @@
 [gd_scene format=3 uid="uid://c8ilhiox31kgv"]
 
 [ext_resource type="Texture2D" uid="uid://ceoa266do8xoj" path="res://space_background_pack/Assets/Blue Version/layered/asteroid-2.png" id="1_n51xl"]
-[ext_resource type="Script" uid="uid://tadxqc3exubj" path="res://meteor.gd" id="1_ohe0j"]
 
 [node name="Meteor" type="Area2D" unique_id=1225048878]
-script = ExtResource("1_ohe0j")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2032004613]
 scale = Vector2(6.2058825, 6.205882)
@@ -12,5 +10,3 @@ texture = ExtResource("1_n51xl")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1534776541]
 polygon = PackedVector2Array(-2, -49, 6, -48, 6, -43, 42, -42, 60, -22, 61, -2, 55, 1, 55, 28, 34, 49, 13, 49, 11, 55, -30, 55, -38, 44, -50, 43, -52, 25, -56, 18, -55, -31, -26, -50)
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
