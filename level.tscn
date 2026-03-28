@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://xgpk6kee77tt" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://co1n0evi7eecx" path="res://space_background_pack/Assets/Blue Version/blue-preview.png" id="1_vonw3"]
+[ext_resource type="PackedScene" uid="uid://c8ilhiox31kgv" path="res://meteor.tscn" id="3_oi3di"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
 size = Vector2(79, 1300)
@@ -12,9 +13,6 @@ size = Vector2(79, 1300)
 position = Vector2(644, 365)
 scale = Vector2(1.6, 1.6)
 texture = ExtResource("1_vonw3")
-
-[node name="Player" parent="." unique_id=395982688 instance=ExtResource("1_u52ul")]
-position = Vector2(647, 328)
 
 [node name="Borders" type="Node2D" parent="." unique_id=1580840824]
 
@@ -37,3 +35,9 @@ shape = SubResource("RectangleShape2D_vonw3")
 position = Vector2(649, -37)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="Player" parent="." unique_id=395982688 instance=ExtResource("1_u52ul")]
+position = Vector2(647, 328)
+
+[node name="Meteor" parent="." unique_id=1225048878 instance=ExtResource("3_oi3di")]
+position = Vector2(386, 271)
