@@ -21,6 +21,7 @@ position = Vector2(647, 328)
 [node name="Borders" type="Node2D" parent="." unique_id=1580840824]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=400552675]
+collision_layer = 4
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=665023253]
 position = Vector2(1313, 378)

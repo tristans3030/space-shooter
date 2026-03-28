@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://csovnheumhkhc" path="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engines/PNGs/Main Ship - Engines - Burst Engine.png" id="2_i3pqv"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1235587758]
+collision_mask = 6
 script = ExtResource("1_i3pqv")
 
 [node name="PlayerImage" type="Sprite2D" parent="." unique_id=401016286]

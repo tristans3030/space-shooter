@@ -4,7 +4,8 @@
 [ext_resource type="Script" uid="uid://tadxqc3exubj" path="res://meteor.gd" id="1_ohe0j"]
 
 [node name="Meteor" type="Area2D" unique_id=1225048878]
-collision_mask = 2
+collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_ohe0j")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2032004613]
