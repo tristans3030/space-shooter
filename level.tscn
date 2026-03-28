@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://xgpk6kee77tt" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://co1n0evi7eecx" path="res://space_background_pack/Assets/Blue Version/blue-preview.png" id="1_vonw3"]
 [ext_resource type="PackedScene" uid="uid://c8ilhiox31kgv" path="res://meteor.tscn" id="3_oi3di"]
+[ext_resource type="Script" uid="uid://byumhuuocbcxf" path="res://meteorTimer.gd" id="4_0b4ue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
 size = Vector2(79, 1300)
@@ -41,3 +42,8 @@ position = Vector2(647, 328)
 
 [node name="Meteor" parent="." unique_id=1225048878 instance=ExtResource("3_oi3di")]
 position = Vector2(386, 271)
+
+[node name="Timer" type="Timer" parent="." unique_id=1326372161]
+script = ExtResource("4_0b4ue")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
