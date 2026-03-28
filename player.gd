@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var speed := 500
+var can_shoot: bool = true
 
 signal laser(position)
 
@@ -20,6 +21,12 @@ func listen_to_input(delta: float) -> void:
 	move_and_slide()
 
 	# shooting input
-	if Input.is_action_just_pressed("shoot"):
-		laser.emit(position)
+	if Input.is_action_just_pressed("shoot") and can_shoot == true:
+		laser.emit($LaserStartPosition.global_position) # Emit the laser signal with the position of the laser (adjusted to be above the player)
+		can_shoot = false
+		$LaserTimer.start()
+
+
+func _on_laser_timer_timeout() -> void:
+	can_shoot = true
 	
