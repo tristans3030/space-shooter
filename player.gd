@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	listen_to_input(delta)
 
 # Handle player input for movement
-func listen_to_input(delta: float) -> void:
+func listen_to_input(_delta: float) -> void:
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
