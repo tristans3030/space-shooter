@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dxgv7df1wx7nl"]
+
+[ext_resource type="PackedScene" uid="uid://xgpk6kee77tt" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://co1n0evi7eecx" path="res://space_background_pack/Assets/Blue Version/blue-preview.png" id="1_vonw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
+size = Vector2(79, 1300)
+
+[node name="Level" type="Node2D" unique_id=60951422]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1268902798]
+position = Vector2(644, 365)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("1_vonw3")
+
+[node name="Player" parent="." unique_id=395982688 instance=ExtResource("1_u52ul")]
+position = Vector2(647, 328)
+
+[node name="Borders" type="Node2D" parent="." unique_id=1580840824]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=400552675]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=665023253]
+position = Vector2(1313, 378)
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=1143395205]
+position = Vector2(-37, 387)
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=683131909]
+position = Vector2(644, 755)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=574327648]
+position = Vector2(649, -37)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_vonw3")

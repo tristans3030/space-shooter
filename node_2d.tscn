@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dba13s81nbx4q"]
+
+[ext_resource type="Texture2D" uid="uid://chywh3cuvx2b4" path="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://csovnheumhkhc" path="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engines/PNGs/Main Ship - Engines - Burst Engine.png" id="2_epypp"]
+
+[node name="Player" type="Node2D" unique_id=395982688]
+
+[node name="PlayerImage" type="Sprite2D" parent="." unique_id=401016286]
+texture = ExtResource("1_0e48y")
+
+[node name="Engine" type="Sprite2D" parent="PlayerImage" unique_id=1291979920]
+position = Vector2(0, 9)
+texture = ExtResource("2_epypp")
