@@ -38,3 +38,8 @@ func _process(delta: float) -> void:
 func _on_body_entered(_body: Node2D) -> void:
 	collision.emit()
 	
+
+
+func _on_area_entered(area: Area2D) -> void:
+	area.queue_free()
+	queue_free()
