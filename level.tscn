@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://dm6oaf0st2a2b" path="res://level.gd" id="1_oi3di"]
 [ext_resource type="PackedScene" uid="uid://xgpk6kee77tt" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://co1n0evi7eecx" path="res://space_background_pack/Assets/Blue Version/blue-preview.png" id="1_vonw3"]
-[ext_resource type="SpriteFrames" uid="uid://fvnbx6831wfy" path="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Big Pulse Engine - Idle.aseprite" id="4_0b4ue"]
 [ext_resource type="SpriteFrames" uid="uid://c3helvjt64bt1" path="res://Blinking_Star.aseprite" id="5_f2txt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
@@ -23,39 +22,46 @@ texture = ExtResource("1_vonw3")
 position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars" unique_id=1847822576]
-position = Vector2(148.00002, 126)
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Stars" unique_id=1259479220]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars" unique_id=1567639562]
-position = Vector2(1064, 122)
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars" unique_id=344207099]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars" unique_id=336373114]
-position = Vector2(475, 385.00003)
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars" unique_id=1321917838]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars" unique_id=2018872447]
-position = Vector2(721, 186)
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars" unique_id=1204548250]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Stars" unique_id=396295027]
-position = Vector2(196, 537)
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Stars" unique_id=1752215092]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
-[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Stars" unique_id=1203414731]
-position = Vector2(1103, 349)
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars" unique_id=1185988443]
+position = Vector2(875.00006, 581)
 scale = Vector2(4.34375, 4.34375)
 sprite_frames = ExtResource("5_f2txt")
+autoplay = "default"
 
 [node name="Player" parent="." unique_id=395982688 instance=ExtResource("1_u52ul")]
-position = Vector2(647, 328)
+position = Vector2(646, 340)
 
 [node name="Borders" type="Node2D" parent="." unique_id=1580840824]
 
@@ -87,10 +93,6 @@ autostart = true
 [node name="Meteors" type="Node2D" parent="." unique_id=221692124]
 
 [node name="Lasers" type="Node2D" parent="." unique_id=385885574]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1331805639]
-sprite_frames = ExtResource("4_0b4ue")
-frame_progress = 0.41774964
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]

@@ -9,6 +9,7 @@ collision_mask = 6
 script = ExtResource("1_i3pqv")
 
 [node name="PlayerImage" type="Sprite2D" parent="." unique_id=401016286]
+scale = Vector2(1.0978236, 1.0978236)
 texture = ExtResource("1_onrkg")
 
 [node name="Engine" type="Sprite2D" parent="PlayerImage" unique_id=1291979920]
@@ -16,6 +17,7 @@ position = Vector2(0, 9)
 texture = ExtResource("2_i3pqv")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=121077503]
+scale = Vector2(1.0978236, 1.0978236)
 polygon = PackedVector2Array(0, -15, -3, -12, -6, -7, -6, -4, -16, 5, -16, 12, -12, 11, -12, 14, -11, 15, -11, 19, -8, 22, -5, 22, -5, 25, 5, 25, 5, 22, 9, 22, 11, 20, 11, 16, 12, 15, 12, 11, 16, 13, 16, 4, 6, -5, 6, -8, 3, -12)
 
 [node name="LaserStartPosition" type="Marker2D" parent="." unique_id=2141057592]
