@@ -1,4 +1,5 @@
 # space-shooter
-My very first GoDot project :)
+My very first GoDot project :) Windows only supported
 
-This project is not completed yet. More functionality coming soon!
+**Download**
+Go to the releases tab and download the EXE file. Only windows is supported.
