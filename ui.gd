@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-static var image = load("res://heart.png")
+static var image = load("res://Heart.png")
 var time_elapsed := 0
 
 func _ready() -> void:
