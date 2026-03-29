@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://dbnd6slml63cj"
+path="res://.godot/imported/Main Ship - Engines - Burst Engine - Spritesheet.aseprite-ba57a20f6f500b18f837fc69d5c0fc9a.res"
+
+[deps]
+
+source_file="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Burst Engine - Spritesheet.aseprite"
+dest_files=["res://.godot/imported/Main Ship - Engines - Burst Engine - Spritesheet.aseprite-ba57a20f6f500b18f837fc69d5c0fc9a.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=false
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

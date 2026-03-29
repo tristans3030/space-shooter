@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://fvnbx6831wfy"
+path="res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Idle.aseprite-ed34020de7739230a39c40490a2faede.res"
+
+[deps]
+
+source_file="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Big Pulse Engine - Idle.aseprite"
+dest_files=["res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Idle.aseprite-ed34020de7739230a39c40490a2faede.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=true
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

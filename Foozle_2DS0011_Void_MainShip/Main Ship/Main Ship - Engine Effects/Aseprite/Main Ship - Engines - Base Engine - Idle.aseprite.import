@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://c5tqqmcte15oj"
+path="res://.godot/imported/Main Ship - Engines - Base Engine - Idle.aseprite-362e40e185049c2226124e69f96bf761.res"
+
+[deps]
+
+source_file="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Base Engine - Idle.aseprite"
+dest_files=["res://.godot/imported/Main Ship - Engines - Base Engine - Idle.aseprite-362e40e185049c2226124e69f96bf761.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=true
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

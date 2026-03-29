@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://dtsynavu1hdbr"
+path="res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Powering.aseprite-3e379efa0e0c0a809e4341a3944f2325.res"
+
+[deps]
+
+source_file="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Big Pulse Engine - Powering.aseprite"
+dest_files=["res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Powering.aseprite-3e379efa0e0c0a809e4341a3944f2325.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=false
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

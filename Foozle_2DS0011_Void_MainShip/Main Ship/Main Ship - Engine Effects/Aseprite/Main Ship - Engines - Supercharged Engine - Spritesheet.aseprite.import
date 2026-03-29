@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://cfv21mkmjv46w"
+path="res://.godot/imported/Main Ship - Engines - Supercharged Engine - Spritesheet.aseprite-2270895c1153879f76999e1d83b4dd82.res"
+
+[deps]
+
+source_file="res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Engine Effects/Aseprite/Main Ship - Engines - Supercharged Engine - Spritesheet.aseprite"
+dest_files=["res://.godot/imported/Main Ship - Engines - Supercharged Engine - Spritesheet.aseprite-2270895c1153879f76999e1d83b4dd82.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=false
+sheet/sheet_type="packed"
+sheet/sheet_columns=12
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true
