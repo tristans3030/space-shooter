@@ -2,7 +2,8 @@ extends Control
 
 var level_scene: PackedScene = load("res://level.tscn")
 
-
+func _ready() -> void:
+	$CenterContainer/VBoxContainer/Score.text = "Score: " + str(Global.score)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
