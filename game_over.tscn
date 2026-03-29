@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b5p8d4x74rqrq"]
 
+[ext_resource type="FontFile" uid="uid://c04b0rvdbiuys" path="res://Fonts/UnicaOne-Regular.ttf" id="1_y26ei"]
+
 [node name="GameOver" type="Control" unique_id=1673876225]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,62 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=527221132]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18521369, 0.19551316, 0.34433922, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=809809614]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1010942753]
+layout_mode = 2
+
+[node name="GameOver" type="Label" parent="CenterContainer/VBoxContainer" unique_id=477959272]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y26ei")
+theme_override_font_sizes/font_size = 77
+text = "Game Over"
+
+[node name="Score" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1830739785]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y26ei")
+theme_override_font_sizes/font_size = 42
+text = "Score: X"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1512021046]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -84.0
+offset_top = -40.0
+offset_right = 84.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 54
+
+[node name="Press space to restart" type="Label" parent="MarginContainer" unique_id=1310325545]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_y26ei")
+theme_override_font_sizes/font_size = 22
+text = "Press space to restart"

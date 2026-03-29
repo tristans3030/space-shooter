@@ -7,6 +7,8 @@ var direction_x: float
 @export var max_speed := 700
 @export var min_speed := 300
 
+signal collision
+
 func _ready() -> void:
 	var rng: RandomNumberGenerator = RandomNumberGenerator.new() # Create a new random number generator
 	var texture = rng.randi_range(1, 2) # Randomly select a texture for the meteor
@@ -33,6 +35,6 @@ func _process(delta: float) -> void:
 	rotation += rotation_speed * delta # Rotate the meteor based on the rotation speed
 
 # detect collisions
-func _on_body_entered(body: Node2D) -> void:
-	print('body entered')
-	print(body)
+func _on_body_entered(_body: Node2D) -> void:
+	collision.emit()
+	

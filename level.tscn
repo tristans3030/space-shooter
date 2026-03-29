@@ -95,7 +95,7 @@ autostart = true
 
 [node name="Lasers" type="Node2D" parent="." unique_id=385885574]
 
-[node name="UI" parent="." unique_id=554092032 instance=ExtResource("5_1ainy")]
+[node name="UI" parent="." unique_id=554092032 groups=["ui"] instance=ExtResource("5_1ainy")]
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
