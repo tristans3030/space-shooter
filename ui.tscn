@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bq1vm3bh2lvw7"]
+
+[ext_resource type="FontFile" uid="uid://c04b0rvdbiuys" path="res://Fonts/UnicaOne-Regular.ttf" id="1_m6e0p"]
+[ext_resource type="Texture2D" uid="uid://dmglmqtrl376y" path="res://Heart.png" id="2_27fn8"]
+
+[node name="UI" type="CanvasLayer" unique_id=554092032]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=692231212]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.0
+offset_right = 38.0
+offset_bottom = 51.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 14
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=203533815]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7136683, 0.8300794, 0.97062093, 1)
+theme_override_fonts/font = ExtResource("1_m6e0p")
+theme_override_font_sizes/font_size = 42
+text = "XXXX"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1343934289]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_constants/separation = -55
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=788630122]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_27fn8")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=649840968]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_27fn8")
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer" unique_id=1700174371]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_27fn8")
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer" unique_id=1491983175]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_27fn8")
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer" unique_id=1985675560]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_27fn8")
