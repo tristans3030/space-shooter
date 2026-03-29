@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b5p8d4x74rqrq"]
 
 [ext_resource type="FontFile" uid="uid://c04b0rvdbiuys" path="res://Fonts/UnicaOne-Regular.ttf" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://bvwu1ilo545kt" path="res://game_over.gd" id="1_yxx3c"]
 
 [node name="GameOver" type="Control" unique_id=1673876225]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_yxx3c")
 
 [node name="Background" type="ColorRect" parent="." unique_id=527221132]
 layout_mode = 1
