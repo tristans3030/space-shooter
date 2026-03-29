@@ -5,6 +5,7 @@ var meteor_scene: PackedScene = load("res://meteor.tscn")
 var laser_scene: PackedScene = load("res://laser.tscn")
 
 var health: int = 3
+signal health_changed(new_health)
 
 func _ready() -> void:
 	# set up health ui
@@ -28,6 +29,7 @@ func _ready() -> void:
 
 func _on_meter_collision() -> void:
 	health -= 1
+	health_changed.emit(health) # Emit the signal with the new health value
 	get_tree().call_group("ui", "set_health", health)
 	print(health)
 	if health <= 0:

@@ -8,6 +8,7 @@ signal laser(position)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	position = Vector2(100, 500)
+	$PlayerImage.texture = load("res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -30,3 +31,10 @@ func listen_to_input(_delta: float) -> void:
 func _on_laser_timer_timeout() -> void:
 	can_shoot = true
 	
+
+
+func _on_level_health_changed(new_health: Variant) -> void:
+	if new_health <= 2:
+		$PlayerImage.texture = load("res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Slight damage.png")
+	elif new_health <= 1:
+		$PlayerImage.texture = load("res://Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Very damaged.png")
