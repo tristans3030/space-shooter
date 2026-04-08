@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bqo7qe06mxth6"]
+
+[ext_resource type="Texture2D" uid="uid://c5slws7ginn2u" path="res://movementButton.png" id="1_nf18x"]
+
+[node name="MobileButtons" type="Control" unique_id=2089805461]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dPad" type="Control" parent="." unique_id=485897462]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Right" type="TouchScreenButton" parent="dPad" unique_id=535453831]
+position = Vector2(195, 528.99994)
+scale = Vector2(2.1562502, 2.1562502)
+texture_normal = ExtResource("1_nf18x")
+
+[node name="Left" type="TouchScreenButton" parent="dPad" unique_id=979431482]
+position = Vector2(126.00001, 597.99994)
+rotation = 3.1415927
+scale = Vector2(2.1562502, 2.1562502)
+texture_normal = ExtResource("1_nf18x")
+
+[node name="Down" type="TouchScreenButton" parent="dPad" unique_id=598439397]
+position = Vector2(195.00002, 598)
+rotation = 1.5707964
+scale = Vector2(2.1562502, 2.1562502)
+texture_normal = ExtResource("1_nf18x")
+
+[node name="Up" type="TouchScreenButton" parent="dPad" unique_id=1468252192]
+position = Vector2(126.00001, 529)
+rotation = -1.5707964
+scale = Vector2(2.1562502, 2.1562502)
+texture_normal = ExtResource("1_nf18x")
