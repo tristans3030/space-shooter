@@ -10,30 +10,51 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="dPad" type="Control" parent="." unique_id=485897462]
-anchors_preset = 0
+[node name="dPad" type="MarginContainer" parent="." unique_id=1678925464]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
 offset_right = 40.0
-offset_bottom = 40.0
+grow_vertical = 0
+theme_override_constants/margin_left = 109
+theme_override_constants/margin_bottom = 187
 
-[node name="Right" type="TouchScreenButton" parent="dPad" unique_id=535453831]
-position = Vector2(195, 528.99994)
+[node name="Contents" type="Control" parent="dPad" unique_id=485897462]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Right" type="TouchScreenButton" parent="dPad/Contents" unique_id=535453831]
+position = Vector2(69, 0)
 scale = Vector2(2.1562502, 2.1562502)
 texture_normal = ExtResource("1_nf18x")
+passby_press = true
+action = "right"
+visibility_mode = 1
 
-[node name="Left" type="TouchScreenButton" parent="dPad" unique_id=979431482]
-position = Vector2(126.00001, 597.99994)
-rotation = 3.1415927
+[node name="Left" type="TouchScreenButton" parent="dPad/Contents" unique_id=979431482]
+position = Vector2(0, 69)
+rotation = -3.1415925
 scale = Vector2(2.1562502, 2.1562502)
 texture_normal = ExtResource("1_nf18x")
+passby_press = true
+action = "left"
+visibility_mode = 1
 
-[node name="Down" type="TouchScreenButton" parent="dPad" unique_id=598439397]
-position = Vector2(195.00002, 598)
+[node name="Down" type="TouchScreenButton" parent="dPad/Contents" unique_id=598439397]
+position = Vector2(69, 69)
 rotation = 1.5707964
 scale = Vector2(2.1562502, 2.1562502)
 texture_normal = ExtResource("1_nf18x")
+passby_press = true
+action = "down"
+visibility_mode = 1
 
-[node name="Up" type="TouchScreenButton" parent="dPad" unique_id=1468252192]
-position = Vector2(126.00001, 529)
+[node name="Up" type="TouchScreenButton" parent="dPad/Contents" unique_id=1468252192]
 rotation = -1.5707964
 scale = Vector2(2.1562502, 2.1562502)
 texture_normal = ExtResource("1_nf18x")
+passby_press = true
+action = "up"
+visibility_mode = 1
